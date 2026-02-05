@@ -38,5 +38,3 @@ Aide & dépannage
 
 Auteur
 - Projet pour TP/examen — livrable demandé par Pr. Salah-Eddine Mansour.
-
-Thanks
