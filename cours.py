@@ -6,14 +6,6 @@ Chaque cours a un code, un nom, un enseignant (optionnel) et une liste d'étudia
 
 
 class Cours:
-    """Représente un cours.
-
-    Args:
-        code (str): code du cours (ex: MATH101)
-        nom (str): nom du cours
-        enseignant (Enseignant | None): enseignant responsable (peut être None)
-    """
-
     def __init__(self, code, nom, enseignant=None):
         self.code = code
         self.nom = nom
