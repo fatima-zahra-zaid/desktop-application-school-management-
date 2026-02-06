@@ -1,11 +1,12 @@
 import tkinter as tk
 from tkinter import messagebox
-
+#we import the classes Etudiant, Enseignant, and Cours from their respective modules. These classes should have methods to manage their data and relationships, such as adding students to courses, assigning teachers to courses, etc. For simplicity, we will focus on the afficher() method to display their information in the text widget.
 from etudiant import Etudiant
 from enseignant import Enseignant
 from cours import Cours
 
-# Very small, beginner-friendly UI
+#tkinter is a library for GUI in Python. We will use it to create a simple interface for managing students, teachers, and courses., have may methodes of the class Etudiant, Enseignant and Cours, but we will use only afficher() method to display the information of each object in the text widget. The other methods can be implemented as needed for additional functionality.
+
 students = []
 teachers = []
 courses = []
@@ -24,7 +25,8 @@ def add_student():
 
 
 def add_teacher():
-    tid = ent_tid.get().strip(); tnom = ent_tnom.get().strip()
+    tid = ent_tid.get().strip(); 
+    tnom = ent_tnom.get().strip()
     if not tid or not tnom:
         messagebox.showwarning('Erreur', 'ID et nom requis')
         return
@@ -34,7 +36,8 @@ def add_teacher():
 
 
 def add_course():
-    code = ent_code.get().strip(); name = ent_cname.get().strip()
+    code = ent_code.get().strip(); 
+    name = ent_cname.get().strip()
     if not code or not name:
         messagebox.showwarning('Erreur', 'Code et nom requis')
         return
@@ -47,7 +50,8 @@ def add_course():
 
 
 def enroll():
-    sid = ent_enroll_sid.get().strip(); code = ent_enroll_code.get().strip()
+    sid = ent_enroll_sid.get().strip(); 
+    code = ent_enroll_code.get().strip()
     s = next((x for x in students if x.id == sid), None)
     c = next((x for x in courses if x.code == code), None)
     if not s or not c:
@@ -71,7 +75,7 @@ def show():
 
 
 root = tk.Tk()
-root.title('Gestion Scolaire - Beginner')
+root.title('Gestion Scolaire')
 
 # Student inputs
 tk.Label(root, text='Étudiant ID').grid(row=0, column=0)

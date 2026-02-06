@@ -7,3 +7,4 @@ class Etudiant:
 
     def afficher(self):
         return f"{self.id} - {self.nom} {self.prenom} ({self.niveau})"
+    
