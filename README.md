@@ -1,6 +1,6 @@
 Gestion Scolaire — Desktop (Tkinter)
 
-Cette petite appli est conçue pour débutants. Elle permet d'ajouter des étudiants, des enseignants, de créer des cours et d'inscrire des étudiants à des cours. Le code est volontairement simple et commenté pour faciliter une présentation en séance.
+Cette petite appli est conçue pour débutants. Elle permet d'ajouter des étudiants, des enseignants, de créer des cours et d'inscrire des étudiants à des cours. 
 
 ## Prérequis
 
@@ -19,16 +19,7 @@ python -m py_compile cours.py enseignant.py etudiant.py main.py
 python main.py
 ```
 
-## Présentation en séance (démo rapide)
 
-- Cliquez sur le bouton "Remplir Données Démo" pour ajouter automatiquement quelques étudiants, enseignants et cours.
-- Pour remettre à zéro, utilisez le bouton "Vider Données".
-- Montrez les actions suivantes :
-  1.  Ajouter un étudiant (ID + Nom + Prénom), puis regarder la liste mise à jour.
-  2.  Ajouter un enseignant (ID + Nom).
-  3.  Créer un cours (Code + Nom) et (optionnel) lier un enseignant via son ID.
-  4.  Inscrire un étudiant à un cours (entrer l'ID étudiant et le code du cours).
-- La zone de texte affiche en temps réel les listes (Étudiants, Enseignants, Cours et nombre d'inscrits).
 
 ### Interface (HD & propreté)
 
@@ -40,7 +31,7 @@ python main.py
 
 ## Fichiers
 
-- `main.py` : interface Tkinter/ttk HD (séparateurs, frames), combobox pour sélections, avec commentaires.
+- `main.py` : interface Tkinter/ttk HD (séparateurs, frames), combobox pour sélections
 - `etudiant.py` : classe `Etudiant`.
 - `enseignant.py` : classe `Enseignant`.
 - `cours.py` : classe `Cours` (enseignant optionnel, méthode `afficher` robuste).
@@ -57,6 +48,4 @@ python main.py
 - Erreur `import tkinter` : réinstaller Python en cochant "tcl/tk and IDLE".
 - Lancez dans un terminal pour voir les messages : `python main.py`.
 
-## Auteur
 
-Projet pour TP/examen — livrable demandé par Pr. Salah-Eddine Mansour.
